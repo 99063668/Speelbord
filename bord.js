@@ -1,18 +1,11 @@
 page();
-    
-function onbuttonclicked(a) {
-  document.getElementById("button" + a).classList.remove("button")
-  document.getElementById("button" + a).classList.add("clickedbutton")
-}
-
-    
+       
 function page() {
   document.body.style.backgroundColor = "grey";
   //style page
     
   createButtons(25);
 }
-    
     
 function createButtons(amount){
   for (var a = 1;a <(amount + 1); a++) {
@@ -23,5 +16,4 @@ function createButtons(amount){
      button.innerHTML = "" + a; 
      container.appendChild(button);
   }
-  set_onclick(amount);
 }
